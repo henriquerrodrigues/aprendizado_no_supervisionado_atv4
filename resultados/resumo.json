@@ -1,0 +1,634 @@
+{
+  "n_amostras": 152,
+  "n_musicas": 21,
+  "n_jogos": 21,
+  "KMeans": {
+    "tamanhos": {
+      "0": 61,
+      "1": 55,
+      "2": 36
+    },
+    "metricas": {
+      "n_grupos": 3,
+      "menor_grupo": 36,
+      "maior_grupo": 61,
+      "silhueta_euclid": 0.07828837542710501,
+      "silhueta_jaccard": 0.08085080742837247,
+      "davies_bouldin": 2.86279039561418,
+      "calinski_harabasz": 13.404326863177191
+    },
+    "extremos_por_grupo": {
+      "0": {
+        "mais_altos": [
+          [
+            "Luta",
+            0.77,
+            0.297
+          ],
+          [
+            "Arcade",
+            0.836,
+            0.29
+          ],
+          [
+            "RPG",
+            0.902,
+            0.277
+          ],
+          [
+            "Plataforma",
+            0.82,
+            0.274
+          ],
+          [
+            "Rítmico",
+            0.59,
+            0.268
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "Eletrônica",
+            0.639,
+            0.001
+          ],
+          [
+            "Sertanejo",
+            0.475,
+            0.021
+          ],
+          [
+            "Bandinha",
+            0.492,
+            0.031
+          ],
+          [
+            "Reggaeton",
+            0.426,
+            0.031
+          ],
+          [
+            "Esporte",
+            0.475,
+            0.041
+          ]
+        ]
+      },
+      "1": {
+        "mais_altos": [
+          [
+            "Metal",
+            0.618,
+            0.112
+          ],
+          [
+            "Indie",
+            0.636,
+            0.077
+          ],
+          [
+            "RPG",
+            0.655,
+            0.03
+          ],
+          [
+            "Rock",
+            0.909,
+            0.028
+          ],
+          [
+            "Estratégia",
+            0.745,
+            0.015
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "Pagode",
+            0.2,
+            -0.333
+          ],
+          [
+            "Sertanejo",
+            0.127,
+            -0.327
+          ],
+          [
+            "Luta",
+            0.164,
+            -0.31
+          ],
+          [
+            "Reggaeton",
+            0.091,
+            -0.304
+          ],
+          [
+            "Samba",
+            0.164,
+            -0.284
+          ]
+        ]
+      },
+      "2": {
+        "mais_altos": [
+          [
+            "Sertanejo",
+            0.917,
+            0.463
+          ],
+          [
+            "Reggaeton",
+            0.806,
+            0.411
+          ],
+          [
+            "Esporte",
+            0.667,
+            0.232
+          ],
+          [
+            "Funk",
+            0.694,
+            0.188
+          ],
+          [
+            "Cartas",
+            0.806,
+            0.141
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "RPG",
+            0.111,
+            -0.514
+          ],
+          [
+            "Indie",
+            0.139,
+            -0.42
+          ],
+          [
+            "Plataforma",
+            0.167,
+            -0.379
+          ],
+          [
+            "Metal",
+            0.167,
+            -0.34
+          ],
+          [
+            "Estratégia",
+            0.417,
+            -0.314
+          ]
+        ]
+      }
+    },
+    "media_musicas_por_grupo": {
+      "0": 0.606,
+      "1": 0.362,
+      "2": 0.48
+    },
+    "media_jogos_por_grupo": {
+      "0": 0.724,
+      "1": 0.403,
+      "2": 0.364
+    },
+    "integrantes": {
+      "Henrique Rodrigues": 0
+    },
+    "rec_brega": {
+      "grupo": 0,
+      "valor_chave_no_grupo": 0.262,
+      "valor_chave_por_grupo": {
+        "0": 0.262,
+        "1": 0.073,
+        "2": 0.222
+      },
+      "top_absoluto": [
+        [
+          "Survival",
+          0.918
+        ],
+        [
+          "RPG",
+          0.902
+        ],
+        [
+          "Estratégia",
+          0.902
+        ],
+        [
+          "Puzzle",
+          0.902
+        ],
+        [
+          "Tabuleiro",
+          0.869
+        ]
+      ],
+      "top_relativo": [
+        [
+          "Luta",
+          0.297
+        ],
+        [
+          "Arcade",
+          0.29
+        ],
+        [
+          "RPG",
+          0.277
+        ],
+        [
+          "Plataforma",
+          0.274
+        ],
+        [
+          "Rítmico",
+          0.268
+        ]
+      ]
+    },
+    "rec_nao_tabuleiro": {
+      "grupo": 1,
+      "valor_chave_no_grupo": 0.545,
+      "valor_chave_por_grupo": {
+        "0": 0.869,
+        "1": 0.545,
+        "2": 0.722
+      },
+      "top_absoluto": [
+        [
+          "Rock",
+          0.909
+        ],
+        [
+          "Pop",
+          0.782
+        ],
+        [
+          "Indie",
+          0.636
+        ],
+        [
+          "Metal",
+          0.618
+        ],
+        [
+          "Eletrônica",
+          0.564
+        ]
+      ],
+      "top_relativo": [
+        [
+          "Metal",
+          0.112
+        ],
+        [
+          "Indie",
+          0.077
+        ],
+        [
+          "Rock",
+          0.028
+        ],
+        [
+          "K-Pop",
+          -0.017
+        ],
+        [
+          "Clássica",
+          -0.039
+        ]
+      ]
+    }
+  },
+  "Aglomerativo": {
+    "tamanhos": {
+      "0": 58,
+      "1": 58,
+      "2": 36
+    },
+    "metricas": {
+      "n_grupos": 3,
+      "menor_grupo": 36,
+      "maior_grupo": 58,
+      "silhueta_euclid": 0.06908211246868357,
+      "silhueta_jaccard": 0.06880342057067618,
+      "davies_bouldin": 3.1093245333406294,
+      "calinski_harabasz": 12.175934924766528
+    },
+    "extremos_por_grupo": {
+      "0": {
+        "mais_altos": [
+          [
+            "Samba",
+            0.759,
+            0.311
+          ],
+          [
+            "RPG",
+            0.931,
+            0.306
+          ],
+          [
+            "Arcade",
+            0.845,
+            0.299
+          ],
+          [
+            "Pagode",
+            0.828,
+            0.295
+          ],
+          [
+            "MMORPG",
+            0.707,
+            0.286
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "Eletrônica",
+            0.569,
+            -0.069
+          ],
+          [
+            "Esporte",
+            0.431,
+            -0.003
+          ],
+          [
+            "Sertanejo",
+            0.466,
+            0.012
+          ],
+          [
+            "Bandinha",
+            0.483,
+            0.022
+          ],
+          [
+            "Reggaeton",
+            0.431,
+            0.036
+          ]
+        ]
+      },
+      "1": {
+        "mais_altos": [
+          [
+            "Metal",
+            0.655,
+            0.149
+          ],
+          [
+            "Indie",
+            0.672,
+            0.113
+          ],
+          [
+            "Rock",
+            0.966,
+            0.084
+          ],
+          [
+            "RPG",
+            0.672,
+            0.047
+          ],
+          [
+            "MOBA",
+            0.379,
+            0.024
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "Pagode",
+            0.241,
+            -0.292
+          ],
+          [
+            "Samba",
+            0.172,
+            -0.275
+          ],
+          [
+            "Cartas",
+            0.397,
+            -0.268
+          ],
+          [
+            "Sertanejo",
+            0.207,
+            -0.247
+          ],
+          [
+            "Luta",
+            0.241,
+            -0.232
+          ]
+        ]
+      },
+      "2": {
+        "mais_altos": [
+          [
+            "Sertanejo",
+            0.833,
+            0.379
+          ],
+          [
+            "Reggaeton",
+            0.694,
+            0.3
+          ],
+          [
+            "Esporte",
+            0.694,
+            0.26
+          ],
+          [
+            "Corrida",
+            0.694,
+            0.122
+          ],
+          [
+            "Cartas",
+            0.778,
+            0.113
+          ]
+        ],
+        "mais_baixos": [
+          [
+            "RPG",
+            0.056,
+            -0.569
+          ],
+          [
+            "Indie",
+            0.111,
+            -0.448
+          ],
+          [
+            "Plataforma",
+            0.139,
+            -0.407
+          ],
+          [
+            "Metal",
+            0.139,
+            -0.368
+          ],
+          [
+            "MOBA",
+            0.056,
+            -0.3
+          ]
+        ]
+      }
+    },
+    "media_musicas_por_grupo": {
+      "0": 0.606,
+      "1": 0.393,
+      "2": 0.45
+    },
+    "media_jogos_por_grupo": {
+      "0": 0.713,
+      "1": 0.438,
+      "2": 0.351
+    },
+    "integrantes": {
+      "Henrique Rodrigues": 0
+    },
+    "rec_brega": {
+      "grupo": 0,
+      "valor_chave_no_grupo": 0.276,
+      "valor_chave_por_grupo": {
+        "0": 0.276,
+        "1": 0.086,
+        "2": 0.194
+      },
+      "top_absoluto": [
+        [
+          "Survival",
+          0.931
+        ],
+        [
+          "RPG",
+          0.931
+        ],
+        [
+          "Puzzle",
+          0.879
+        ],
+        [
+          "Estratégia",
+          0.879
+        ],
+        [
+          "Cartas",
+          0.862
+        ]
+      ],
+      "top_relativo": [
+        [
+          "RPG",
+          0.306
+        ],
+        [
+          "Arcade",
+          0.299
+        ],
+        [
+          "MMORPG",
+          0.286
+        ],
+        [
+          "Plataforma",
+          0.282
+        ],
+        [
+          "Luta",
+          0.25
+        ]
+      ]
+    },
+    "rec_nao_tabuleiro": {
+      "grupo": 1,
+      "valor_chave_no_grupo": 0.586,
+      "valor_chave_por_grupo": {
+        "0": 0.862,
+        "1": 0.586,
+        "2": 0.694
+      },
+      "top_absoluto": [
+        [
+          "Rock",
+          0.966
+        ],
+        [
+          "Pop",
+          0.776
+        ],
+        [
+          "Indie",
+          0.672
+        ],
+        [
+          "Eletrônica",
+          0.655
+        ],
+        [
+          "Metal",
+          0.655
+        ]
+      ],
+      "top_relativo": [
+        [
+          "Metal",
+          0.149
+        ],
+        [
+          "Indie",
+          0.113
+        ],
+        [
+          "Rock",
+          0.084
+        ],
+        [
+          "Eletrônica",
+          0.017
+        ],
+        [
+          "Folk",
+          -0.019
+        ]
+      ]
+    }
+  },
+  "ari_kmeans_vs_aglomerativo": 0.6573856275976506,
+  "referencia_direta": {
+    "n_gosta_brega": 28,
+    "jogos_mais_comuns_entre_quem_gosta_brega": {
+      "Simulação": 0.821,
+      "Tabuleiro": 0.821,
+      "Cartas": 0.786,
+      "Puzzle": 0.786,
+      "Corrida": 0.75
+    },
+    "n_nao_gosta_tabuleiro": 43,
+    "musicas_mais_comuns_entre_quem_nao_gosta_tabuleiro": {
+      "Rock": 0.86,
+      "Pop": 0.721,
+      "Eletrônica": 0.698,
+      "Funk": 0.558,
+      "Hip-Hop": 0.512
+    }
+  }
+}

@@ -1,0 +1,786 @@
+﻿=== Variações K-Means (k-means++) ===
+     init  k  inercia  iteracoes  ari_estabilidade_n_init1  n_grupos  menor_grupo  maior_grupo  silhueta_euclid  silhueta_jaccard  davies_bouldin  calinski_harabasz
+k-means++  2 1289.034          7                     0.618         2           75           77            0.090             0.091           2.975             16.838
+k-means++  3 1215.110          5                     0.476         3           36           61            0.078             0.081           2.863             13.404
+k-means++  4 1167.550          6                     0.366         4           33           44            0.063             0.036           3.032             11.247
+k-means++  5 1133.172         13                     0.335         5           22           37            0.060             0.006           2.926              9.748
+k-means++  6 1104.615          6                     0.310         6           18           31            0.055             0.014           2.832              8.700
+k-means++  7 1073.624          7                     0.287         7           12           28            0.055             0.008           2.791              8.106
+k-means++  8 1052.194          8                     0.269         8           14           24            0.056             0.025           2.793              7.460
+k-means++  9 1037.161          7                     0.264         9           10           22            0.052             0.017           2.812              6.835
+k-means++ 10 1015.616          6                     0.261        10            9           28            0.054             0.018           2.636              6.496
+
+=== Variações K-Means (random) ===
+  init  k  inercia  iteracoes  ari_estabilidade_n_init1  n_grupos  menor_grupo  maior_grupo  silhueta_euclid  silhueta_jaccard  davies_bouldin  calinski_harabasz
+random  2 1288.982         12                     0.740         2           73           79            0.090             0.087           2.972             16.845
+random  3 1215.224          9                     0.378         3           37           62            0.078             0.083           2.879             13.396
+random  4 1168.370         10                     0.384         4           35           43            0.065             0.037           2.992             11.205
+random  5 1132.437         10                     0.338         5           26           35            0.060             0.018           2.851              9.778
+random  6 1105.636          8                     0.283         6           15           34            0.056             0.025           2.780              8.665
+random  7 1081.406          7                     0.279         7           15           33            0.053             0.025           2.851              7.874
+random  8 1056.008          6                     0.247         8           14           31            0.056             0.034           2.776              7.358
+random  9 1034.121          9                     0.251         9           10           21            0.050            -0.001           2.751              6.907
+random 10 1017.416          9                     0.246        10            6           23            0.050             0.006           2.561              6.456
+
+=== Variações Aglomerativo ===
+ linkage    metric  k  n_grupos  menor_grupo  maior_grupo  silhueta_euclid  silhueta_jaccard  davies_bouldin  calinski_harabasz
+    ward euclidean  2         2           58           94            0.079             0.048           3.066             14.743
+    ward euclidean  3         3           36           58            0.069             0.069           3.109             12.176
+    ward euclidean  4         4           19           58            0.047            -0.001           3.044             10.026
+    ward euclidean  5         5           19           39            0.042             0.012           3.182              8.726
+    ward euclidean  6         6           19           38            0.042            -0.011           3.097              7.899
+    ward euclidean  7         7           11           36            0.046            -0.003           3.023              7.352
+    ward euclidean  8         8           11           27            0.046             0.005           3.010              6.954
+    ward euclidean  9         9           10           20            0.045             0.011           2.851              6.560
+    ward euclidean 10        10            8           20            0.047             0.021           2.735              6.253
+complete euclidean  2         2           58           94            0.066             0.103           3.456             11.728
+complete euclidean  3         3           30           64            0.053             0.064           3.396             10.504
+complete euclidean  4         4           26           64            0.047             0.073           3.433              8.792
+complete euclidean  5         5           26           36            0.028            -0.012           3.985              7.398
+complete euclidean  6         6           13           36            0.027            -0.011           3.707              6.614
+complete euclidean  7         7           13           32            0.029            -0.019           3.402              6.328
+complete euclidean  8         8            8           32            0.032            -0.021           3.142              6.090
+complete euclidean  9         9            8           32            0.027            -0.014           3.048              5.749
+complete euclidean 10        10            8           32            0.025            -0.011           3.019              5.348
+complete manhattan  2         2           58           94            0.066             0.103           3.456             11.728
+complete manhattan  3         3           30           64            0.053             0.064           3.396             10.504
+complete manhattan  4         4           26           64            0.047             0.073           3.433              8.792
+complete manhattan  5         5           26           36            0.028            -0.012           3.985              7.398
+complete manhattan  6         6           13           36            0.027            -0.011           3.707              6.614
+complete manhattan  7         7           13           32            0.029            -0.019           3.402              6.328
+complete manhattan  8         8            8           32            0.032            -0.021           3.142              6.090
+complete manhattan  9         9            8           32            0.027            -0.014           3.048              5.749
+complete manhattan 10        10            8           32            0.025            -0.011           3.019              5.348
+complete    cosine  2         2           64           88            0.031             0.049           5.210              5.387
+complete    cosine  3         3           19           88            0.019             0.039           4.537              5.357
+complete    cosine  4         4            8           88            0.009             0.046           3.847              4.823
+complete    cosine  5         5            8           72            0.013             0.053           3.522              5.115
+complete    cosine  6         6            8           72            0.018             0.050           3.191              5.205
+complete    cosine  7         7            2           72            0.013             0.051           2.924              4.670
+complete    cosine  8         8            2           44            0.020             0.047           2.955              5.052
+complete    cosine  9         9            2           44            0.022             0.053           2.819              4.965
+complete    cosine 10        10            2           44            0.011             0.055           2.683              4.550
+complete   jaccard  2         2           59           93            0.063             0.098           3.555             11.186
+complete   jaccard  3         3           18           93            0.042             0.086           3.185              8.235
+complete   jaccard  4         4           18           93            0.031             0.087           3.334              6.592
+complete   jaccard  5         5           10           93            0.028             0.096           2.897              6.074
+complete   jaccard  6         6            3           93            0.015             0.090           2.675              5.376
+complete   jaccard  7         7            3           80            0.019             0.085           2.706              5.425
+complete   jaccard  8         8            3           75            0.024             0.088           2.620              5.187
+complete   jaccard  9         9            1           75            0.021             0.085           2.416              4.742
+complete   jaccard 10        10            1           75            0.011             0.088           2.309              4.371
+ average euclidean  2         2           61           91            0.079             0.053           3.121             14.577
+ average euclidean  3         3            2           91            0.045            -0.001           2.569              8.314
+ average euclidean  4         4            2           59            0.048             0.027           2.691              8.715
+ average euclidean  5         5            2           51            0.049             0.007           2.665              8.030
+ average euclidean  6         6            2           47            0.046             0.013           2.610              6.946
+ average euclidean  7         7            2           47            0.041            -0.011           2.461              6.127
+ average euclidean  8         8            2           47            0.037            -0.017           2.340              5.514
+ average euclidean  9         9            2           47            0.041            -0.002           2.255              5.650
+ average euclidean 10        10            1           47            0.030            -0.011           2.106              5.175
+ average manhattan  2         2            1          151            0.069             0.039           0.865              1.316
+ average manhattan  3         3            1           89            0.055             0.014           2.320              8.239
+ average manhattan  4         4            1           85            0.043             0.011           2.298              6.344
+ average manhattan  5         5            1           62            0.042             0.032           2.448              6.697
+ average manhattan  6         6            1           56            0.032            -0.003           2.480              5.943
+ average manhattan  7         7            1           56            0.025            -0.010           2.257              5.227
+ average manhattan  8         8            1           56            0.032            -0.008           2.257              5.328
+ average manhattan  9         9            1           44            0.042             0.011           2.288              5.595
+ average manhattan 10        10            1           42            0.038            -0.007           2.214              5.215
+ average    cosine  2         2            2          150            0.030             0.266           1.387              2.001
+ average    cosine  3         3            2          148           -0.007             0.219           1.438              1.901
+ average    cosine  4         4            2          146           -0.015             0.170           1.550              1.860
+ average    cosine  5         5            2          144           -0.027             0.150           1.560              1.827
+ average    cosine  6         6            2          129           -0.015             0.135           1.886              2.954
+ average    cosine  7         7            2          125           -0.016             0.120           1.909              2.951
+ average    cosine  8         8            2          123           -0.017             0.106           1.856              2.834
+ average    cosine  9         9            2          123           -0.016             0.104           1.814              2.723
+ average    cosine 10        10            1          123           -0.023             0.095           1.644              2.499
+ average   jaccard  2         2            3          149            0.027             0.241           1.605              2.596
+ average   jaccard  3         3            2          147           -0.006             0.213           1.550              2.210
+ average   jaccard  4         4            2          145           -0.013             0.170           1.600              2.072
+ average   jaccard  5         5            2          142           -0.024             0.147           1.719              2.082
+ average   jaccard  6         6            1          142           -0.037             0.132           1.509              1.788
+ average   jaccard  7         7            1          124           -0.021             0.130           1.799              2.913
+ average   jaccard  8         8            1          122           -0.023             0.113           1.764              2.790
+ average   jaccard  9         9            1          122           -0.021             0.108           1.749              2.738
+ average   jaccard 10        10            1          122           -0.028             0.096           1.586              2.513
+  single euclidean  2         2            1          151            0.064             0.136           0.871              1.296
+  single euclidean  3         3            1          150            0.022             0.072           0.896              1.242
+  single euclidean  4         4            1          149           -0.025            -0.073           0.907              1.213
+  single euclidean  5         5            1          148           -0.053            -0.105           0.923              1.180
+  single euclidean  6         6            1          147           -0.069            -0.130           0.923              1.172
+  single euclidean  7         7            1          146           -0.081            -0.154           0.933              1.150
+  single euclidean  8         8            1          145           -0.089            -0.182           0.937              1.136
+  single euclidean  9         9            1          143           -0.087            -0.177           1.097              1.204
+  single euclidean 10        10            1          142           -0.087            -0.181           1.072              1.217
+  single manhattan  2         2            1          151            0.064             0.136           0.871              1.296
+  single manhattan  3         3            1          150            0.022             0.072           0.896              1.242
+  single manhattan  4         4            1          149           -0.025            -0.073           0.907              1.213
+  single manhattan  5         5            1          148           -0.053            -0.105           0.923              1.180
+  single manhattan  6         6            1          147           -0.069            -0.130           0.923              1.172
+  single manhattan  7         7            1          146           -0.081            -0.154           0.933              1.150
+  single manhattan  8         8            1          145           -0.089            -0.182           0.937              1.136
+  single manhattan  9         9            1          143           -0.087            -0.177           1.097              1.204
+  single manhattan 10        10            1          142           -0.087            -0.181           1.072              1.217
+  single    cosine  2         2            1          151            0.019             0.257           0.930              1.138
+  single    cosine  3         3            1          150            0.003             0.242           0.922              1.154
+  single    cosine  4         4            1          149           -0.010             0.192           0.912              1.186
+  single    cosine  5         5            1          148           -0.028             0.184           0.922              1.164
+  single    cosine  6         6            1          147           -0.041             0.147           0.920              1.161
+  single    cosine  7         7            1          146           -0.050             0.137           0.929              1.142
+  single    cosine  8         8            1          145           -0.056             0.113           0.923              1.154
+  single    cosine  9         9            1          144           -0.061             0.102           0.924              1.145
+  single    cosine 10        10            1          143           -0.064             0.078           0.915              1.169
+  single   jaccard  2         2            1          151            0.019             0.257           0.930              1.138
+  single   jaccard  3         3            1          150            0.003             0.242           0.922              1.154
+  single   jaccard  4         4            1          149           -0.010             0.192           0.912              1.186
+  single   jaccard  5         5            1          148           -0.032             0.149           0.916              1.174
+  single   jaccard  6         6            1          147           -0.041             0.147           0.920              1.161
+  single   jaccard  7         7            1          146           -0.050             0.137           0.929              1.142
+  single   jaccard  8         8            1          145           -0.064             0.112           0.936              1.125
+  single   jaccard  9         9            1          144           -0.067             0.080           0.925              1.152
+  single   jaccard 10        10            1          143           -0.075             0.057           0.925              1.149
+
+=== Contingência K-Means x Aglomerativo ===
+Aglomerativo   0   1   2
+KMeans                  
+0             54   6   1
+1              3  48   4
+2              1   4  31
+
+=== Resumo ===
+{
+ "n_amostras": 152,
+ "n_musicas": 21,
+ "n_jogos": 21,
+ "KMeans": {
+  "tamanhos": {
+   "0": 61,
+   "1": 55,
+   "2": 36
+  },
+  "metricas": {
+   "n_grupos": 3,
+   "menor_grupo": 36,
+   "maior_grupo": 61,
+   "silhueta_euclid": 0.07828837542710501,
+   "silhueta_jaccard": 0.08085080742837247,
+   "davies_bouldin": 2.86279039561418,
+   "calinski_harabasz": 13.404326863177191
+  },
+  "extremos_por_grupo": {
+   "0": {
+    "mais_altos": [
+     [
+      "Luta",
+      0.77,
+      0.297
+     ],
+     [
+      "Arcade",
+      0.836,
+      0.29
+     ],
+     [
+      "RPG",
+      0.902,
+      0.277
+     ],
+     [
+      "Plataforma",
+      0.82,
+      0.274
+     ],
+     [
+      "Rítmico",
+      0.59,
+      0.268
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "Eletrônica",
+      0.639,
+      0.001
+     ],
+     [
+      "Sertanejo",
+      0.475,
+      0.021
+     ],
+     [
+      "Bandinha",
+      0.492,
+      0.031
+     ],
+     [
+      "Reggaeton",
+      0.426,
+      0.031
+     ],
+     [
+      "Esporte",
+      0.475,
+      0.041
+     ]
+    ]
+   },
+   "1": {
+    "mais_altos": [
+     [
+      "Metal",
+      0.618,
+      0.112
+     ],
+     [
+      "Indie",
+      0.636,
+      0.077
+     ],
+     [
+      "RPG",
+      0.655,
+      0.03
+     ],
+     [
+      "Rock",
+      0.909,
+      0.028
+     ],
+     [
+      "Estratégia",
+      0.745,
+      0.015
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "Pagode",
+      0.2,
+      -0.333
+     ],
+     [
+      "Sertanejo",
+      0.127,
+      -0.327
+     ],
+     [
+      "Luta",
+      0.164,
+      -0.31
+     ],
+     [
+      "Reggaeton",
+      0.091,
+      -0.304
+     ],
+     [
+      "Samba",
+      0.164,
+      -0.284
+     ]
+    ]
+   },
+   "2": {
+    "mais_altos": [
+     [
+      "Sertanejo",
+      0.917,
+      0.463
+     ],
+     [
+      "Reggaeton",
+      0.806,
+      0.411
+     ],
+     [
+      "Esporte",
+      0.667,
+      0.232
+     ],
+     [
+      "Funk",
+      0.694,
+      0.188
+     ],
+     [
+      "Cartas",
+      0.806,
+      0.141
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "RPG",
+      0.111,
+      -0.514
+     ],
+     [
+      "Indie",
+      0.139,
+      -0.42
+     ],
+     [
+      "Plataforma",
+      0.167,
+      -0.379
+     ],
+     [
+      "Metal",
+      0.167,
+      -0.34
+     ],
+     [
+      "Estratégia",
+      0.417,
+      -0.314
+     ]
+    ]
+   }
+  },
+  "media_musicas_por_grupo": {
+   "0": 0.606,
+   "1": 0.362,
+   "2": 0.48
+  },
+  "media_jogos_por_grupo": {
+   "0": 0.724,
+   "1": 0.403,
+   "2": 0.364
+  },
+  "integrantes": {
+   "Henrique Rodrigues": 0
+  },
+  "rec_brega": {
+   "grupo": 0,
+   "valor_chave_no_grupo": 0.262,
+   "valor_chave_por_grupo": {
+    "0": 0.262,
+    "1": 0.073,
+    "2": 0.222
+   },
+   "top_absoluto": [
+    [
+     "Survival",
+     0.918
+    ],
+    [
+     "RPG",
+     0.902
+    ],
+    [
+     "Estratégia",
+     0.902
+    ],
+    [
+     "Puzzle",
+     0.902
+    ],
+    [
+     "Tabuleiro",
+     0.869
+    ]
+   ],
+   "top_relativo": [
+    [
+     "Luta",
+     0.297
+    ],
+    [
+     "Arcade",
+     0.29
+    ],
+    [
+     "RPG",
+     0.277
+    ],
+    [
+     "Plataforma",
+     0.274
+    ],
+    [
+     "Rítmico",
+     0.268
+    ]
+   ]
+  },
+  "rec_nao_tabuleiro": {
+   "grupo": 1,
+   "valor_chave_no_grupo": 0.545,
+   "valor_chave_por_grupo": {
+    "0": 0.869,
+    "1": 0.545,
+    "2": 0.722
+   },
+   "top_absoluto": [
+    [
+     "Rock",
+     0.909
+    ],
+    [
+     "Pop",
+     0.782
+    ],
+    [
+     "Indie",
+     0.636
+    ],
+    [
+     "Metal",
+     0.618
+    ],
+    [
+     "Eletrônica",
+     0.564
+    ]
+   ],
+   "top_relativo": [
+    [
+     "Metal",
+     0.112
+    ],
+    [
+     "Indie",
+     0.077
+    ],
+    [
+     "Rock",
+     0.028
+    ],
+    [
+     "K-Pop",
+     -0.017
+    ],
+    [
+     "Clássica",
+     -0.039
+    ]
+   ]
+  }
+ },
+ "Aglomerativo": {
+  "tamanhos": {
+   "0": 58,
+   "1": 58,
+   "2": 36
+  },
+  "metricas": {
+   "n_grupos": 3,
+   "menor_grupo": 36,
+   "maior_grupo": 58,
+   "silhueta_euclid": 0.06908211246868357,
+   "silhueta_jaccard": 0.06880342057067618,
+   "davies_bouldin": 3.1093245333406294,
+   "calinski_harabasz": 12.175934924766528
+  },
+  "extremos_por_grupo": {
+   "0": {
+    "mais_altos": [
+     [
+      "Samba",
+      0.759,
+      0.311
+     ],
+     [
+      "RPG",
+      0.931,
+      0.306
+     ],
+     [
+      "Arcade",
+      0.845,
+      0.299
+     ],
+     [
+      "Pagode",
+      0.828,
+      0.295
+     ],
+     [
+      "MMORPG",
+      0.707,
+      0.286
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "Eletrônica",
+      0.569,
+      -0.069
+     ],
+     [
+      "Esporte",
+      0.431,
+      -0.003
+     ],
+     [
+      "Sertanejo",
+      0.466,
+      0.012
+     ],
+     [
+      "Bandinha",
+      0.483,
+      0.022
+     ],
+     [
+      "Reggaeton",
+      0.431,
+      0.036
+     ]
+    ]
+   },
+   "1": {
+    "mais_altos": [
+     [
+      "Metal",
+      0.655,
+      0.149
+     ],
+     [
+      "Indie",
+      0.672,
+      0.113
+     ],
+     [
+      "Rock",
+      0.966,
+      0.084
+     ],
+     [
+      "RPG",
+      0.672,
+      0.047
+     ],
+     [
+      "MOBA",
+      0.379,
+      0.024
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "Pagode",
+      0.241,
+      -0.292
+     ],
+     [
+      "Samba",
+      0.172,
+      -0.275
+     ],
+     [
+      "Cartas",
+      0.397,
+      -0.268
+     ],
+     [
+      "Sertanejo",
+      0.207,
+      -0.247
+     ],
+     [
+      "Luta",
+      0.241,
+      -0.232
+     ]
+    ]
+   },
+   "2": {
+    "mais_altos": [
+     [
+      "Sertanejo",
+      0.833,
+      0.379
+     ],
+     [
+      "Reggaeton",
+      0.694,
+      0.3
+     ],
+     [
+      "Esporte",
+      0.694,
+      0.26
+     ],
+     [
+      "Corrida",
+      0.694,
+      0.122
+     ],
+     [
+      "Cartas",
+      0.778,
+      0.113
+     ]
+    ],
+    "mais_baixos": [
+     [
+      "RPG",
+      0.056,
+      -0.569
+     ],
+     [
+      "Indie",
+      0.111,
+      -0.448
+     ],
+     [
+      "Plataforma",
+      0.139,
+      -0.407
+     ],
+     [
+      "Metal",
+      0.139,
+      -0.368
+     ],
+     [
+      "MOBA",
+      0.056,
+      -0.3
+     ]
+    ]
+   }
+  },
+  "media_musicas_por_grupo": {
+   "0": 0.606,
+   "1": 0.393,
+   "2": 0.45
+  },
+  "media_jogos_por_grupo": {
+   "0": 0.713,
+   "1": 0.438,
+   "2": 0.351
+  },
+  "integrantes": {
+   "Henrique Rodrigues": 0
+  },
+  "rec_brega": {
+   "grupo": 0,
+   "valor_chave_no_grupo": 0.276,
+   "valor_chave_por_grupo": {
+    "0": 0.276,
+    "1": 0.086,
+    "2": 0.194
+   },
+   "top_absoluto": [
+    [
+     "Survival",
+     0.931
+    ],
+    [
+     "RPG",
+     0.931
+    ],
+    [
+     "Puzzle",
+     0.879
+    ],
+    [
+     "Estratégia",
+     0.879
+    ],
+    [
+     "Cartas",
+     0.862
+    ]
+   ],
+   "top_relativo": [
+    [
+     "RPG",
+     0.306
+    ],
+    [
+     "Arcade",
+     0.299
+    ],
+    [
+     "MMORPG",
+     0.286
+    ],
+    [
+     "Plataforma",
+     0.282
+    ],
+    [
+     "Luta",
+     0.25
+    ]
+   ]
+  },
+  "rec_nao_tabuleiro": {
+   "grupo": 1,
+   "valor_chave_no_grupo": 0.586,
+   "valor_chave_por_grupo": {
+    "0": 0.862,
+    "1": 0.586,
+    "2": 0.694
+   },
+   "top_absoluto": [
+    [
+     "Rock",
+     0.966
+    ],
+    [
+     "Pop",
+     0.776
+    ],
+    [
+     "Indie",
+     0.672
+    ],
+    [
+     "Eletrônica",
+     0.655
+    ],
+    [
+     "Metal",
+     0.655
+    ]
+   ],
+   "top_relativo": [
+    [
+     "Metal",
+     0.149
+    ],
+    [
+     "Indie",
+     0.113
+    ],
+    [
+     "Rock",
+     0.084
+    ],
+    [
+     "Eletrônica",
+     0.017
+    ],
+    [
+     "Folk",
+     -0.019
+    ]
+   ]
+  }
+ },
+ "ari_kmeans_vs_aglomerativo": 0.6573856275976506,
+ "referencia_direta": {
+  "n_gosta_brega": 28,
+  "jogos_mais_comuns_entre_quem_gosta_brega": {
+   "Simulação": 0.821,
+   "Tabuleiro": 0.821,
+   "Cartas": 0.786,
+   "Puzzle": 0.786,
+   "Corrida": 0.75
+  },
+  "n_nao_gosta_tabuleiro": 43,
+  "musicas_mais_comuns_entre_quem_nao_gosta_tabuleiro": {
+   "Rock": 0.86,
+   "Pop": 0.721,
+   "Eletrônica": 0.698,
+   "Funk": 0.558,
+   "Hip-Hop": 0.512
+  }
+ }
+}
